@@ -46,6 +46,12 @@
     <Compile Include="CustomDataGridView.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CustomListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomListView.Designer.cs">
+      <DependentUpon>CustomListView.cs</DependentUpon>
+    </Compile>
     <Compile Include="DongHoBamGio.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -67,6 +73,9 @@
     <Compile Include="info.Designer.cs">
       <DependentUpon>info.cs</DependentUpon>
     </Compile>
+    <Compile Include="KiemTraChuoi.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="listSinhVien.cs" />
     <Compile Include="MailTextBox.cs">
       <SubType>Component</SubType>
@@ -75,6 +84,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="SinhVien.cs" />
+    <Compile Include="TextBoxDongHo.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="UpperTextBox.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -84,6 +96,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CustomListView.resx">
+      <DependentUpon>CustomListView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DongHoBamGio.resx">
       <DependentUpon>DongHoBamGio.cs</DependentUpon>
     </EmbeddedResource>

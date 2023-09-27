@@ -57,5 +57,10 @@ namespace CustomControl
                 MessageBox.Show("Đếm ngược đã kết thúc!");
             }
         }
+
+        private void DongHoDemNguoc_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

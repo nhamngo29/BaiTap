@@ -34,11 +34,12 @@
             this.tbMinute = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tbHour = new System.Windows.Forms.TextBox();
+            this.textBoxDongHo1 = new CustomControl.TextBoxDongHo();
             this.SuspendLayout();
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(38, 35);
+            this.btnStart.Location = new System.Drawing.Point(131, 114);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 18;
@@ -51,7 +52,7 @@
             this.tbSecond.BackColor = System.Drawing.SystemColors.Menu;
             this.tbSecond.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbSecond.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSecond.Location = new System.Drawing.Point(110, 3);
+            this.tbSecond.Location = new System.Drawing.Point(203, 82);
             this.tbSecond.MaxLength = 2;
             this.tbSecond.Multiline = true;
             this.tbSecond.Name = "tbSecond";
@@ -64,7 +65,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(94, 3);
+            this.label2.Location = new System.Drawing.Point(187, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(19, 25);
             this.label2.TabIndex = 16;
@@ -75,7 +76,7 @@
             this.tbMinute.BackColor = System.Drawing.SystemColors.Menu;
             this.tbMinute.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbMinute.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbMinute.Location = new System.Drawing.Point(56, 3);
+            this.tbMinute.Location = new System.Drawing.Point(149, 82);
             this.tbMinute.MaxLength = 2;
             this.tbMinute.Multiline = true;
             this.tbMinute.Name = "tbMinute";
@@ -88,7 +89,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(40, 3);
+            this.label1.Location = new System.Drawing.Point(133, 82);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(19, 25);
             this.label1.TabIndex = 14;
@@ -99,7 +100,7 @@
             this.tbHour.BackColor = System.Drawing.SystemColors.Menu;
             this.tbHour.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbHour.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbHour.Location = new System.Drawing.Point(2, 3);
+            this.tbHour.Location = new System.Drawing.Point(95, 82);
             this.tbHour.Multiline = true;
             this.tbHour.Name = "tbHour";
             this.tbHour.Size = new System.Drawing.Size(48, 26);
@@ -107,10 +108,21 @@
             this.tbHour.Text = "00";
             this.tbHour.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // textBoxDongHo1
+            // 
+            this.textBoxDongHo1.BackColor = System.Drawing.SystemColors.Menu;
+            this.textBoxDongHo1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBoxDongHo1.Location = new System.Drawing.Point(58, 141);
+            this.textBoxDongHo1.Multiline = true;
+            this.textBoxDongHo1.Name = "textBoxDongHo1";
+            this.textBoxDongHo1.Size = new System.Drawing.Size(48, 26);
+            this.textBoxDongHo1.TabIndex = 19;
+            // 
             // DongHoDemNguoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBoxDongHo1);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.tbSecond);
             this.Controls.Add(this.label2);
@@ -118,7 +130,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbHour);
             this.Name = "DongHoDemNguoc";
-            this.Size = new System.Drawing.Size(152, 63);
+            this.Size = new System.Drawing.Size(334, 202);
+            this.Load += new System.EventHandler(this.DongHoDemNguoc_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,5 +145,6 @@
         private System.Windows.Forms.TextBox tbMinute;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbHour;
+        private TextBoxDongHo textBoxDongHo1;
     }
 }

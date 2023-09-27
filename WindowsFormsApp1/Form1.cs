@@ -25,6 +25,10 @@ namespace WindowsFormsApp1
         {
             // TODO: This line of code loads data into the 'qLDSV_TCDataSet.GIANGVIEN' table. You can move, or remove it, as needed.
             this.gIANGVIENTableAdapter.Fill(this.qLDSV_TCDataSet.GIANGVIEN);
+            ListViewItem lvt= new ListViewItem("123");
+            lvt.SubItems.Add("321");
+            lvt.SubItems.Add("aaa");
+
 
         }
 
@@ -45,6 +49,18 @@ namespace WindowsFormsApp1
         {
 
             File.AppendAllText("out.txt", $"{infoSV.txtMssv.Text},{infoSV.lbHoten.Text},{infoSV.lbNgaysinh.Text},{infoSV.lbGT.Text},{infoSV.lbMalop.Text},{infoSV.lbCMND.Text}\n");
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(kiemTraChuoi1.ChuoiChua)
+            {
+                MessageBox.Show("Chính xác");
+            }    
+            else
+            {
+                MessageBox.Show("chưa Chính xác");
+            }    
         }
     }
 }

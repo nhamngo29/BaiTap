@@ -45,7 +45,7 @@
             // 
             // btnLap
             // 
-            this.btnLap.Location = new System.Drawing.Point(108, 52);
+            this.btnLap.Location = new System.Drawing.Point(140, 94);
             this.btnLap.Name = "btnLap";
             this.btnLap.Size = new System.Drawing.Size(86, 36);
             this.btnLap.TabIndex = 2;
@@ -55,7 +55,7 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(19, 52);
+            this.btnStart.Location = new System.Drawing.Point(51, 94);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(83, 36);
             this.btnStart.TabIndex = 1;
@@ -71,7 +71,7 @@
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.lbTime);
             this.Name = "DongHoBamGio";
-            this.Size = new System.Drawing.Size(220, 94);
+            this.Size = new System.Drawing.Size(285, 164);
             this.ResumeLayout(false);
             this.PerformLayout();
 
